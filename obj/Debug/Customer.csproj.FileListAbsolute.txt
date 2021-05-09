@@ -1,0 +1,9 @@
+E:\FitGym\Customer\Customer\bin\Debug\Customer.exe.config
+E:\FitGym\Customer\Customer\bin\Debug\Customer.exe
+E:\FitGym\Customer\Customer\bin\Debug\Customer.pdb
+E:\FitGym\Customer\Customer\obj\Debug\Customer.csprojResolveAssemblyReference.cache
+E:\FitGym\Customer\Customer\obj\Debug\Customer.Properties.Resources.resources
+E:\FitGym\Customer\Customer\obj\Debug\Customer.csproj.GenerateResource.Cache
+E:\FitGym\Customer\Customer\obj\Debug\Customer.exe
+E:\FitGym\Customer\Customer\obj\Debug\Customer.pdb
+E:\FitGym\Customer\Customer\obj\Debug\Customer.Customerinfo.resources

@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2DD05EA-F67D-42BF-A582-3AEDAC97FA36}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FITZONE</RootNamespace>
+    <AssemblyName>FITZONE</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddUpdateProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUpdateProgress.Designer.cs">
+      <DependentUpon>AddUpdateProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BmiExerciseUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BmiExerciseUpdate.Designer.cs">
+      <DependentUpon>BmiExerciseUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\AddUpdateProgress_Info_Class.cs" />
+    <Compile Include="Classes\BMI_Exercise_Info_Class.cs" />
+    <Compile Include="Classes\Bodyparts_Info_Class.cs" />
+    <Compile Include="Classes\Customer_Info_Class.cs" />
+    <Compile Include="Classes\Customer_Report_Class.cs" />
+    <Compile Include="Classes\Employee_Info_Class.cs" />
+    <Compile Include="Classes\Exercise_Info_Class.cs" />
+    <Compile Include="Classes\Exercise_Report_Info_Class.cs" />
+    <Compile Include="Classes\Expected_Count_Info_Class.cs" />
+    <Compile Include="Classes\Search_Cust_Emp_Class.cs" />
+    <Compile Include="Customerinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customerinfo.Designer.cs">
+      <DependentUpon>Customerinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeInfo.Designer.cs">
+      <DependentUpon>EmployeeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exercise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exercise.Designer.cs">
+      <DependentUpon>Exercise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FITZONEDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITZONEDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FITZONEDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITZONEDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FITZONEDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITZONEDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FITZONEDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITZONEDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FITZONEDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITZONEDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FITZONEDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITZONEDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FITZONEDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITZONEDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FITZONEDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITZONEDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FITZONEDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITZONEDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FITZONEDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITZONEDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FITZONEDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FITZONEDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyReport.Designer.cs">
+      <DependentUpon>MonthlyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Record.Designer.cs">
+      <DependentUpon>Record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchEmpCust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchEmpCust.Designer.cs">
+      <DependentUpon>SearchEmpCust.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddUpdateProgress.resx">
+      <DependentUpon>AddUpdateProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BmiExerciseUpdate.resx">
+      <DependentUpon>BmiExerciseUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customerinfo.resx">
+      <DependentUpon>Customerinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeInfo.resx">
+      <DependentUpon>EmployeeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exercise.resx">
+      <DependentUpon>Exercise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyReport.resx">
+      <DependentUpon>MonthlyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Record.resx">
+      <DependentUpon>Record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchEmpCust.resx">
+      <DependentUpon>SearchEmpCust.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="FITZONEDataSet.xsc">
+      <DependentUpon>FITZONEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITZONEDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITZONEDataSet.xss">
+      <DependentUpon>FITZONEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet1.xsc">
+      <DependentUpon>FITZONEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITZONEDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITZONEDataSet1.xss">
+      <DependentUpon>FITZONEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet10.xsc">
+      <DependentUpon>FITZONEDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITZONEDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITZONEDataSet10.xss">
+      <DependentUpon>FITZONEDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet2.xsc">
+      <DependentUpon>FITZONEDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITZONEDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITZONEDataSet2.xss">
+      <DependentUpon>FITZONEDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet3.xsc">
+      <DependentUpon>FITZONEDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITZONEDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITZONEDataSet3.xss">
+      <DependentUpon>FITZONEDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet4.xsc">
+      <DependentUpon>FITZONEDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITZONEDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITZONEDataSet4.xss">
+      <DependentUpon>FITZONEDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet5.xsc">
+      <DependentUpon>FITZONEDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITZONEDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITZONEDataSet5.xss">
+      <DependentUpon>FITZONEDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet6.xsc">
+      <DependentUpon>FITZONEDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITZONEDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITZONEDataSet6.xss">
+      <DependentUpon>FITZONEDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet7.xsc">
+      <DependentUpon>FITZONEDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITZONEDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITZONEDataSet7.xss">
+      <DependentUpon>FITZONEDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet8.xsc">
+      <DependentUpon>FITZONEDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITZONEDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITZONEDataSet8.xss">
+      <DependentUpon>FITZONEDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet9.xsc">
+      <DependentUpon>FITZONEDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="FITZONEDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FITZONEDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FITZONEDataSet9.xss">
+      <DependentUpon>FITZONEDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FitZone Label.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FitZone Label2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
