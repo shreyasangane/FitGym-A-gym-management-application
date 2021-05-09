@@ -1,1 +1,1 @@
-# FitGym--A-gym-management-applicatin
+# FitGym--A-gym-management-application
